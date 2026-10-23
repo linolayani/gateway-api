@@ -75,7 +75,7 @@ var TCPRouteParentRefAttachAll = confsuite.ConformanceTest{
 
 		// Each listener should route to the same backend, since the
 		// attach-all TCPRoute is the only route on the Gateway.
-		const backend = "tcp-echo-attach-all"
+		const backend = "tcp-backend"
 		for _, listener := range []string{"one", "two", "three", "four"} {
 			t.Run("Listener "+listener+" routes to the attach-all backend", func(t *testing.T) {
 				gwAddr, err := kubernetes.WaitForGatewayAddress(t, suite.Client, suite.TimeoutConfig,

@@ -45,7 +45,7 @@ var UDPRouteParentRefAttachAllListeners = confsuite.ConformanceTest{
 		ns := confsuite.InfrastructureNamespace
 		gwNN := types.NamespacedName{Name: "udp-attach-all-listeners-gateway", Namespace: ns}
 		routeNN := types.NamespacedName{Name: "udp-route-attach-all", Namespace: ns}
-		const backend = "udp-echo-attach-all"
+		const backend = "udp-echo"
 
 		// The test creates an additional Gateway in the gateway-conformance-infra
 		// namespace so we have to wait for it to be ready.
