@@ -24,6 +24,6 @@ spec:
       sectionName: udp
   rules:
     - backendRefs:
-        - name: udp-echo-no-reference-grant
+        - name: app-backend-v1
           namespace: gateway-conformance-app-backend
           port: 8080
